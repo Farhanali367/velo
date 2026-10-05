@@ -1,517 +1,375 @@
-🛍️ VELO — Modern E-Commerce Platform
+# VELO. — Premium E-Commerce Platform
 
-«A modern, full-stack e-commerce platform built with Next.js, React, TypeScript and Supabase.»
+> A modern, responsive e-commerce platform built with Next.js, React, TypeScript and Supabase.
 
-VELO is a production-deployed e-commerce application designed to provide a smooth and modern online shopping experience. It combines a responsive customer storefront with authentication, cart management, wishlist, checkout, order tracking, reviews, notifications, inventory management and a powerful admin dashboard.
+## ✨ Overview
 
-🌐 Live Demo: https://velo-eight-opal.vercel.app
-💻 GitHub: https://github.com/Farhanali367/velo
+VELO. is a full-stack e-commerce application with a premium shopping experience, customer authentication, product discovery, cart, wishlist, checkout, orders, reviews, notifications, recommendations, flash sales and an admin dashboard.
 
----
+## 🚀 Live Demo
 
-✨ Overview
+https://velo-eight-opal.vercel.app
 
-VELO was built as a complete e-commerce project rather than a simple product listing website.
+## 🛠️ Tech Stack
 
-The application covers the complete shopping journey:
+- Next.js
+- React
+- TypeScript
+- CSS
+- Supabase Authentication
+- PostgreSQL
+- Vercel
+- Git & GitHub
 
-Discover → Search → Product → Wishlist → Cart → Checkout → Order → Tracking
+## 🛍️ Customer Features
 
-It also provides an administrative workflow:
-
-Manage Products → Inventory → Orders → Customers → Reviews → Coupons → Analytics → Reports
-
-The project focuses on real-world functionality, responsive design, database integration and production deployment.
-
----
-
-🚀 Key Features
-
-🛒 Customer Shopping Experience
-
-- Modern responsive storefront
-- Product categories
-- Product search
-- Product sorting
+### Shopping
+- Premium product storefront
+- 50+ realistic fallback products
+- Live Supabase products
+- Categories
+- Search and sorting
 - Product details
-- Product pricing
+- Ratings and reviews
 - Stock availability
-- Low-stock indicators
-- Out-of-stock protection
-- Wishlist
-- Shopping cart
-- Quantity management
-- Product reviews & ratings
-- Product Q&A
-- Smart recommendations
-- Recently viewed products
+- Low-stock and out-of-stock protection
 
----
+### ❤️ Wishlist
+- Add/remove products
+- Persistent logged-in wishlist
+- Guest wishlist support
+- Add to cart
+- Add all available items to cart
 
-💳 Cart & Checkout
+### 🛒 Cart
+- Add/remove products
+- Quantity controls
+- Stock-aware cart
+- Delivery calculation
+- Free delivery above ₹999
+- Automatic discount above ₹5000
+- Savings calculation
 
-VELO provides a complete checkout flow with:
+### ⚡ Flash Sale
+- Live countdown
+- Dynamic sale discounts
+- Sale pricing in cart and checkout
+- Stock-aware purchasing
 
-- Cart management
-- Automatic subtotal calculation
-- Delivery fee calculation
-- Free delivery eligibility
-- Automatic discount calculation
-- Coupon support
+## 💳 Checkout & Orders
+
 - Delivery address
-- Payment method selection
+- UPI, Card and COD options
 - Order summary
-- Order confirmation
-- Order success screen
+- Coupons
+- Discounts and delivery calculation
+- Secure order creation
+- Order history
+- Order tracking
+- Order cancellation
+- Reorder
+- Order notifications
 
-Delivery Logic
+### 📦 Order Status
 
-Order Amount < ₹999
-        ↓
-Delivery Fee Applied
+```text
+Placed → Confirmed → Packed → Shipped → Out for Delivery → Delivered
+```
 
-Order Amount ≥ ₹999
-        ↓
-Free Delivery
+Cancelled orders are also supported.
 
----
-
-📦 Order Management
+## ⭐ Reviews & Ratings
 
 Customers can:
+- Submit 1–5 star reviews
+- Edit their own reviews
+- Delete their own reviews
+- View ratings and review counts
 
-- Place orders
-- View order history
-- View order details
-- Track order status
-- Cancel eligible orders
-- Reorder previous purchases
-- Receive order notifications
+Admins can manage reviews.
 
-Order Lifecycle
+## ❓ Product Q&A
 
-Placed
-  ↓
-Confirmed
-  ↓
-Packed
-  ↓
-Shipped
-  ↓
-Out for Delivery
-  ↓
-Delivered
+Customers can ask product questions and manage their own questions. Admins can answer, update and delete questions.
 
-Orders can also be marked as Cancelled when applicable.
+## 🔔 Notifications
 
----
-
-🔐 Authentication & User Accounts
-
-VELO uses Supabase Authentication for account management.
-
-User capabilities
-
-- Sign up
-- Login
-- Logout
-- Protected user functionality
-- User profile
-- Persistent wishlist
-- Personal orders
-- Personal notifications
-
-User-specific database access is protected using Row Level Security (RLS).
-
----
-
-⚡ Flash Sale
-
-The platform includes a live flash-sale experience featuring:
-
-- Live countdown
-- Dynamic discounted prices
-- Sale products
-- Stock-aware cart controls
-- Low-stock warnings
-- Out-of-stock protection
-
-This creates a more realistic e-commerce shopping experience.
-
----
-
-👨‍💼 Admin Dashboard
-
-VELO includes a dedicated admin experience for managing the platform.
-
-Product Management
-
-- Add products
-- Edit products
-- Delete products
-- Update stock
-- Search products
-- Manage product information
-
-Order Management
-
-- View orders
-- View order details
-- Update order status
-- Track fulfillment
-
-Customer Management
-
-- View customer information
-- Monitor customer activity
-
-Review Management
-
-- View reviews
-- Manage customer reviews
-
-Coupon Management
-
-- Create coupons
-- Update coupons
-- Activate/deactivate coupons
-- Manage usage limits
-- Track coupon usage
-
----
-
-📊 Analytics & Reports
-
-The admin dashboard includes useful business insights such as:
-
-- Total revenue
-- Total orders
-- Total customers
-- Average order value
-- Fulfillment statistics
-- Revenue trends
-- Order pipeline
-- Sales reports
-- Detailed order reports
-
-Reporting
-
-Reports can be:
-
-- Previewed
-- Printed
-- Exported as CSV
-- Used for basic business analysis
-
----
-
-🎁 Loyalty & Smart Recommendations
-
-VELO includes a lightweight customer loyalty and recommendation experience.
-
-Loyalty
-
-Customer loyalty is calculated from order activity.
-
-Recommendations
-
-Products can be recommended using signals such as:
-
-- Recently viewed products
-- Product category
-- Related products
-- Shopping activity
-
----
-
-🔔 Notifications
-
-Customers receive in-app notifications for important events such as:
-
-- Order placed
-- Order status changes
-- Order cancellation
-- Other account-related updates
-
-Notifications support:
-
+- Order notifications
+- Status notifications
+- Cancellation notifications
 - Unread count
 - Mark as read
 - Mark all as read
-- Delete notifications
+- Clear notifications
 
----
+## 🎁 Loyalty & Recommendations
 
-📱 Responsive Design
+- Loyalty progress based on order activity
+- Recommended products
+- Recently viewed products
+- Same-category recommendations
 
-VELO is designed to work across:
+## 👨‍💼 Admin Dashboard
 
-- 📱 Mobile
-- 📲 Tablet
-- 💻 Laptop
-- 🖥️ Desktop
+### Analytics
+- Revenue
+- Orders
+- Customers
+- Fulfillment
+- Order pipeline
+- 7-day and 30-day performance
 
-Responsive behavior has been considered for:
+### Product Management
+- Add, edit and delete products
+- Update price, description, category, image and stock
+- Search products
 
-- Navigation
-- Product grids
-- Product modals
-- Cart drawer
-- Wishlist
-- Checkout
-- Admin dashboard
-- Tables
-- Forms
+### Inventory
+- Live stock
+- Low-stock alerts
+- Out-of-stock detection
+- Stock updates
 
----
+### Customer Management
+- View customers
+- Monitor customer activity
 
-🛠️ Tech Stack
+### Orders
+- View orders
+- View order details
+- Update order status
 
-Technology| Purpose
-Next.js| Application framework
-React| UI development
-TypeScript| Type-safe development
-Supabase| Backend services
-PostgreSQL| Database
-Supabase Auth| Authentication
-Supabase RLS| Database security
-Vercel| Production deployment
-GitHub| Version control
+### Coupons
+- Create, edit and delete coupons
+- Percentage or flat discounts
+- Minimum order amount
+- Maximum discount
+- Expiry
+- Usage limits
+- Usage tracking
 
----
+## 📊 Reports Center
 
-🏗️ Application Architecture
+- Sales reports
+- Detailed order reports
+- Revenue statistics
+- Order statistics
+- Average order value
+- Today / 7 days / 30 days / All time
+- CSV export
+- Print / PDF
 
-                    ┌──────────────────┐
-                    │      VELO        │
-                    │  E-Commerce App  │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┴──────────────┐
-              │                             │
-       Customer Experience             Admin Experience
-              │                             │
-       ┌──────┴──────┐              ┌───────┴────────┐
-       │             │              │                │
-    Products       Cart          Products          Orders
-       │             │              │                │
-   Wishlist      Checkout       Inventory         Customers
-       │             │              │                │
-   Reviews        Orders         Reviews           Analytics
-       │             │              │                │
- Notifications   Tracking        Coupons            Reports
-              │                             │
-              └──────────────┬──────────────┘
-                             │
-                      ┌──────▼──────┐
-                      │  Supabase   │
-                      │ PostgreSQL  │
-                      │    Auth     │
-                      │    RLS      │
-                      └──────┬──────┘
-                             │
-                        ┌────▼────┐
-                        │ Vercel  │
-                        │  Live   │
-                        └─────────┘
+## 🔐 Authentication & Security
 
----
+VELO. uses Supabase Authentication and Row Level Security.
 
-🔒 Security
-
-Security was considered during the development of the application.
-
-VELO uses:
-
-- Supabase Authentication
-- PostgreSQL
-- Row Level Security
-- User-specific database policies
-- Protected admin functionality
+Security includes:
+- Protected authentication
+- User-specific data policies
+- Admin role protection
+- Secure order operations
 - Atomic order creation
 - Stock validation
-- Secure environment variables
+- Protected profiles, orders and notifications
+- Supabase RLS
 
-Environment Variables
+> Never expose Supabase secret/service-role keys in frontend code.
 
-Create a ".env.local" file:
+## 🗂️ Project Structure
 
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
-
-«Never commit Supabase secret/service-role keys to GitHub or expose them in the frontend.»
-
----
-
-💻 Local Development
-
-1. Clone the repository
-
-git clone https://github.com/Farhanali367/velo.git
-
-2. Enter the project
-
-cd velo
-
-3. Install dependencies
-
-npm install
-
-4. Configure environment variables
-
-Create:
-
-.env.local
-
-Add your Supabase project credentials.
-
-5. Start the development server
-
-npm run dev
-
-Then open:
-
-http://localhost:3000
-
----
-
-🧪 Production Build
-
-Before deploying:
-
-npm run build
-
-A successful production build confirms that the application can be compiled for deployment.
-
----
-
-🚀 Deployment
-
-VELO is deployed using Vercel with GitHub integration.
-
-Developer
-    │
-    ▼
-Local Development
-    │
-    ▼
-Git
-    │
-    ▼
-GitHub
-    │
-    ▼
-Vercel
-    │
-    ▼
-Production
-
-The production application is currently live on Vercel.
-
----
-
-📁 Project Structure
-
+```text
 velo/
-│
 ├── app/
-│   └── page.tsx
-│
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── page-backup.tsx
 ├── lib/
 │   └── supabase.ts
-│
 ├── public/
-│
 ├── .env.local
+├── .gitignore
+├── next.config.ts
+├── next-env.d.ts
 ├── package.json
-├── tsconfig.json
+├── package-lock.json
 └── README.md
+```
 
----
+## ⚙️ Environment Variables
 
-📚 What This Project Demonstrates
+Create `.env.local` in the project root:
 
-VELO demonstrates practical experience with:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+```
 
-- Modern React development
-- Next.js application development
-- TypeScript
-- Responsive UI design
-- Authentication
-- Database integration
-- PostgreSQL
-- CRUD operations
-- E-commerce workflows
-- Cart management
-- Checkout logic
-- Inventory management
-- Order management
-- Database security
-- Row Level Security
-- Git & GitHub
-- Production builds
-- Cloud deployment
+Never put a Supabase secret/service-role key in client-side code or GitHub.
 
----
+For Vercel, add the same public variables under:
 
-🎯 Project Goals
+```text
+Project → Settings → Environment Variables
+```
 
-The main goals of VELO were to:
+## 💻 Local Development
 
-- Build a realistic e-commerce application
-- Practice full-stack web development
-- Understand database-driven applications
-- Implement authentication and authorization
-- Build responsive interfaces
-- Handle real-world shopping workflows
-- Learn production deployment
-- Create a portfolio-ready project
+### Clone
 
----
+```bash
+git clone https://github.com/Farhanali367/velo.git
+cd velo
+```
 
-🔮 Future Improvements
+### Install
 
-Potential future improvements include:
+```bash
+npm install
+```
 
-- Online payment gateway
-- Shipping provider integration
-- Email notifications
-- Advanced filtering
-- Product image uploads
+### Run
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+## 🏗️ Production Build
+
+Test the production build with:
+
+```bash
+npm run build
+```
+
+Then:
+
+```bash
+npm start
+```
+
+## 🚀 Deployment
+
+VELO. is deployed on Vercel.
+
+Typical workflow:
+
+```text
+Local Project
+     ↓
+Git
+     ↓
+GitHub
+     ↓
+Vercel
+     ↓
+Production
+```
+
+Update production with:
+
+```bash
+git add .
+git commit -m "Update VELO"
+git push
+```
+
+## 📱 Responsive Design
+
+Designed for:
+- Mobile
+- Tablet
+- Laptop
+- Desktop
+
+Responsive areas include navigation, product grids, cart, wishlist, modals, checkout, admin dashboard, reports, tables and forms.
+
+## 🎨 Design Philosophy
+
+VELO. focuses on:
+- Premium visual design
+- Clean typography
+- Modern cards
+- Responsive layouts
+- Smooth interactions
+- Clear navigation
+- Beginner-friendly usability
+- Professional e-commerce experience
+
+## 🧪 Production Checklist
+
+- [x] Storefront
+- [x] Authentication
+- [x] Products
+- [x] Search
+- [x] Categories
+- [x] Cart
+- [x] Wishlist
+- [x] Checkout
+- [x] Coupons
+- [x] Orders
+- [x] Order tracking
+- [x] Reviews
+- [x] Product Q&A
+- [x] Notifications
+- [x] Admin dashboard
+- [x] Analytics
+- [x] Reports
+- [x] Inventory
+- [x] Flash sale
+- [x] Loyalty
+- [x] Recommendations
+- [x] Responsive UI
+- [x] GitHub
+- [x] Vercel deployment
+- [x] Supabase
+- [x] Row Level Security
+
+## 🔒 Production Security Notes
+
+1. Never commit `.env.local`.
+2. Never expose secret/service-role keys.
+3. Keep Supabase RLS enabled.
+4. Protect admin operations.
+5. Validate stock before creating orders.
+6. Use atomic order operations.
+7. Validate prices and totals server-side for real payment processing.
+8. Review authentication and database policies before production use.
+
+## 📌 Future Improvements
+
+- Razorpay / Stripe payments
+- Product image storage
+- Advanced search
+- Server-side pagination
+- Email order confirmations
+- Shipping integration
 - Automated testing
-- Advanced performance optimization
-- Custom domain
-- More advanced analytics
+- CI/CD pipeline
+- PWA support
+
+## 👨‍💻 Author
+
+**Farhan Ali**
+
+BTech CSE Student & Developer
+
+GitHub: https://github.com/Farhanali367
+
+## 📄 License
+
+This project is created for learning, development and portfolio purposes.
 
 ---
 
-👨‍💻 Developer
-
-Farhan Ali
-
-BTech CSE Student | Web Developer
-
-Interested in:
-
-- Web Development
-- Software Development
-- Full-Stack Development
-- DSA
-- Building practical projects
-
-Connect
-
-GitHub:
-https://github.com/Farhanali367
-
----
-
-⭐ Support
-
-If you find this project useful or interesting, consider giving the repository a ⭐.
-
----
-
-📄 License
-
-This project was created for learning, portfolio and development purposes.
+<p align="center">
+  <strong>VELO.</strong><br>
+  Built with Next.js, React, TypeScript & Supabase.
+</p>
